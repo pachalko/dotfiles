@@ -1,0 +1,17 @@
+[user]
+	name = Piotr Pachalko
+
+[core]
+	excludesfile = $XDG_CONFIG_HOME/git/.gitignore_global
+	autocrlf = input
+
+[color]
+	ui = auto
+
+[pager]
+	branch = false
+	log = false
+
+[pull]
+	rebase = true
+

@@ -1,0 +1,12 @@
+background-opacity = 1
+command = /Users/pachalko/.config/ghostty/tmux.sh
+confirm-close-surface = false
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-icon-ghost-color = grey
+macos-icon-screen-color = black
+macos-titlebar-proxy-icon = hidden
+shell-integration = zsh
+title = " "
+window-decoration = true
+
