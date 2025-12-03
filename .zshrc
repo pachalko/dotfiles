@@ -121,3 +121,6 @@ alias k=kubecolor
 export XDG_CONFIG_HOME="$HOME/.config"
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+# Starship prompt: https://starship.rs/guide/
+eval "$(starship init zsh)"
