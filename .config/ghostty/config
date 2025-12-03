@@ -1,12 +1,25 @@
 background-opacity = 1
+
 command = /Users/pachalko/.config/ghostty/tmux.sh
+
 confirm-close-surface = false
+
+font-family = "Hack Nerd Font Mono"
+
+cursor-style = block
+cursor-style-blink = false
+cursor-opacity = 0.7
+
+
 macos-icon = custom-style
 macos-icon-frame = plastic
 macos-icon-ghost-color = grey
 macos-icon-screen-color = black
 macos-titlebar-proxy-icon = hidden
+
 shell-integration = zsh
+shell-integration-features = no-cursor
+
 title = " "
 window-decoration = true
 
