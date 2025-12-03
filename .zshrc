@@ -75,6 +75,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   aws
   git
+  uv
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,6 +112,12 @@ source $ZSH/oh-my-zsh.sh
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias lg=lazygit
 alias lgd='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias tf=tofu
+alias ll='ls -alh'
+alias h=history
+alias k=kubecolor
 
 # Other env variables
 export XDG_CONFIG_HOME="$HOME/.config"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
