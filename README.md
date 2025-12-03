@@ -1,6 +1,21 @@
 # dotfiles
 
-## Restore
+## Prerequisities (on Mac)
+
+1. Install/update Xcode CLI tools (this is required for git, and many developer tools)
+```
+❯ xcode-select --install
+```
+2. Install Homebrew
+```
+❯ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+3. Install proper git
+```
+❯ brew install git
+```
+
+## Restore dotfiles
 
 Create the alias, clone, and checkout.
 ```
@@ -24,6 +39,14 @@ Remove or backup any collisions and repeat the checkout.
 ❯ dotfiles checkout
 ```
 
+Reload shell
+```
+❯ source ~/.zshrc
+```
+
 Done.
 
-
+## (bonus) Restore brew apps
+```
+❯ brew bundle --file=~/.config/Brewfile
+```
