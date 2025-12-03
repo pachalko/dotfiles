@@ -20,6 +20,9 @@ mattmc3/zephyr path:plugins/directory
 # mattmc3/zephyr path:plugins/utility
 # mattmc3/zephyr path:plugins/zfunctions
 
+# Docs: https://github.com/apachler/zsh-aws
+apachler/zsh-aws
+
 # Docs: https://github.com/zsh-users/zsh-autosuggestions
 zsh-users/zsh-autosuggestions kind:defer
 
