@@ -19,6 +19,16 @@ alias tf=tofu
 # Path
 export PATH=$PATH:$HOME/.rd/bin
 
+# Completions for docker
+source <(docker completion zsh)
+# Completions for kubectl
+source <(kubectl completion zsh)
+# Completions for nerdctl
+source <(nerdctl completion zsh)
+# Completions for prefect
+source <(prefect --show-completion)
+
+
 # Set up Antidote: https://antidote.sh/install
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load
@@ -31,3 +41,6 @@ eval "$(zoxide init zsh)"
 
 # Starship prompt: https://starship.rs/guide/
 eval "$(starship init zsh)"
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select

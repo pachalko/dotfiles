@@ -7,10 +7,10 @@ TMUX=/opt/homebrew/bin/tmux
 $TMUX has-session -t $SESSION_NAME 2>/dev/null
 
 if [ $? -eq 0 ]; then
- # If the session exists, reattach to it
- $TMUX attach-session -t $SESSION_NAME
+    # If the session exists, reattach to it
+    $TMUX attach-session -t $SESSION_NAME
 else
- # If the session doesn't exist, start a new one
- $TMUX new-session -s $SESSION_NAME -d
- $TMUX attach-session -t $SESSION_NAME
+    # If the session doesn't exist, start a new one
+    $TMUX new-session -s $SESSION_NAME -d
+    $TMUX attach-session -t $SESSION_NAME
 fi

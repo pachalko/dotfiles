@@ -1,6 +1,6 @@
 background-opacity = 1
 
-initial-command = /Users/pachalko/.config/ghostty/tmux.sh
+initial-command = ~/.config/ghostty/tmux.sh
 
 confirm-close-surface = false
 

@@ -1,13 +1,15 @@
 # .zsh_plugins.txt - comments begin with "#"
 
-# set up Zsh completions with plugins
-mattmc3/ez-compinit
-# zsh-users/zsh-completions 
+    # set up Zsh completions with plugins
+    # mattmc3/ez-compinit
+    # zsh-users/zsh-completions 
+# add completions functions to fpath
+zsh-users/zsh-completions kind:fpath path:src
 
 # Docs: https://github.com/mattmc3/zephyr
 # pick only the plugins you want and remove the rest
 mattmc3/zephyr path:plugins/color
-# mattmc3/zephyr path:plugins/completion
+mattmc3/zephyr path:plugins/completion
 # mattmc3/zephyr path:plugins/compstyle
 # mattmc3/zephyr path:plugins/confd
 mattmc3/zephyr path:plugins/directory
