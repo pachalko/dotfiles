@@ -1,0 +1,109 @@
+tap "fluxcd/tap"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Tool for managing dock items
+brew "dockutil"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# CLI to retrieve AWS credentials from Okta
+brew "gimme-aws-creds"
+# Distributed revision control system
+brew "git"
+# Kubernetes package manager
+brew "helm"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Kubernetes YAML to Terraform HCL converter
+brew "k2tf"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Colorize your kubectl output
+brew "kubecolor"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Library for database change tracking
+brew "liquibase"
+# Mac App Store command-line interface
+brew "mas"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Drop-in replacement for Terraform. Infrastructure as Code Tool
+brew "opentofu"
+# Object-relational database system
+brew "postgresql@18"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Tool to generate documentation from Terraform modules
+brew "terraform-docs"
+# Terminal multiplexer
+brew "tmux"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Flux CLI
+brew "fluxcd/tap/flux"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Web browser focusing on privacy
+cask "brave-browser", args: { appdir: "/Applications" }
+# Clipboard extension app
+cask "clipy", args: { appdir: "/Applications" }
+# Databases and SQL IDE
+cask "datagrip", args: { appdir: "/Applications" }
+cask "font-symbols-only-nerd-font"
+cask "font-victor-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Graphically shows disk usage within a file system
+cask "grandperspective"
+# Home media player
+cask "plex", args: { appdir: "/Applications" }
+# VPN client focusing on security
+cask "protonvpn"
+# IDE for Python programming - Community Edition
+cask "pycharm-ce", args: { appdir: "/Applications" }
+# Kubernetes and container management on the desktop
+cask "rancher", args: { appdir: "/Applications" }
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle", args: { appdir: "/Applications" }
+# Application to control your PlayStation 4 or PlayStation 5
+cask "sony-ps-remote-play"
+# Virtual machines UI using QEMU
+cask "utm"
+# Open-source code editor
+cask "visual-studio-code", args: { appdir: "/Applications" }
+# Mesh VPN client
+cask "zerotier-one"
+mas "Bitwarden", id: 1352778147
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Parcel", id: 639968404
+mas "Screenboard", id: 6744718540
+mas "Xcode", id: 497799835
+vscode "docker.docker"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "hashicorp.terraform"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "oderwat.indent-rainbow"
