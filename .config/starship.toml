@@ -8,7 +8,7 @@
 # my stuff
 #
 
-right_format = "$terraform $kubernetes $aws"
+right_format = "$terraform $aws"
 
 # Inserts a blank line between shell prompts
 add_newline = false
@@ -64,11 +64,6 @@ stashed = "≡"
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "yellow"
-
-[kubernetes]
-disabled = false
-format = '[$symbol$context]($style)'
-style = "blue"
 
 [python]
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
