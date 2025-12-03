@@ -3,6 +3,9 @@ HISTFILE=~/.zsh_history
 HISTSIZE=99999
 SAVEHIST=99999
 
+# Enable ls color
+export CLICOLOR=1
+
 # Aliases. For a full list of active ones, run `alias`.
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias fzf='fzf --tmux'
@@ -15,6 +18,10 @@ alias tf=tofu
 
 # Path
 export PATH=$PATH:$HOME/.rd/bin
+
+# Set up Antidote: https://antidote.sh/install
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+antidote load
 
 # Set up fzf key bindings and fuzzy completion: https://junegunn.github.io/fzf/
 source <(fzf --zsh)

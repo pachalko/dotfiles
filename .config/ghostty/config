@@ -1,10 +1,11 @@
 background-opacity = 1
 
-command = /Users/pachalko/.config/ghostty/tmux.sh
+initial-command = /Users/pachalko/.config/ghostty/tmux.sh
 
 confirm-close-surface = false
 
-font-family = "Hack Nerd Font Mono"
+font-family = Maple Mono NF
+font-size = 13.5
 
 cursor-style = block
 cursor-style-blink = false
@@ -21,5 +22,9 @@ shell-integration = zsh
 shell-integration-features = no-cursor
 
 title = " "
+
+# Run `ghostty +list-themes` to see all themes
+theme = Catppuccin Mocha
+
 window-decoration = true
 

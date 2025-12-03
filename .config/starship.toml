@@ -18,6 +18,20 @@ format = '[⏲ $duration]($style) '
 min_time = 2_000
 show_milliseconds = false
 
+[character]
+format = '$symbol '
+success_symbol = '[󰚺](bold green)'
+error_symbol = '[󰚺](bold red)'
+vimcmd_symbol = '[󰧘](bold green)'
+vimcmd_visual_symbol = '[󰧘](bold yellow)'
+vimcmd_replace_symbol = '[󰧘](bold purple)'
+vimcmd_replace_one_symbol = '[󰧘](bold purple)'
+disabled = false
+
+[directory]
+style = "blue"
+read_only = " "
+
 #
 # apps
 #
@@ -25,21 +39,40 @@ show_milliseconds = false
 [aws]
 format = '[$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
 symbol = " "
+style = 'yellow'
 
 [git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
 symbol = " "
+style = 'gray'
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+conflicted = "C"
+untracked = "U"
+modified = "M"
+staged = "S"
+renamed = "R"
+deleted = "D"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "yellow"
 
 [kubernetes]
 disabled = false
 format = '[$symbol$context]($style)'
+style = "blue"
 
 [python]
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = " "
 
 [terraform]
-format = '[$symbol \($workspace\)]($style)'
-symbol = "♦"
+format = '[$symbol $workspace]($style)'
+symbol = "󰏗"
 
 #
 # other stuff from template
