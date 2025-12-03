@@ -1,3 +1,18 @@
+# What is this?
 *~
-.DS_Store
 
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
