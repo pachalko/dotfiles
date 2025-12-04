@@ -8,7 +8,7 @@
 # my stuff
 #
 
-right_format = '${custom.prefect} $terraform $kubernetes $aws'
+right_format = '${custom.prefect}$terraform $kubernetes $aws'
 
 # Inserts a blank line between shell prompts
 add_newline = false
