@@ -6,6 +6,7 @@ confirm-close-surface = false
 
 font-family = Maple Mono NF
 font-size = 13.5
+adjust-cell-width = -1
 
 cursor-style = block
 cursor-style-blink = false

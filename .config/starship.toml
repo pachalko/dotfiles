@@ -8,7 +8,7 @@
 # my stuff
 #
 
-right_format = "$terraform $aws"
+right_format = '${custom.prefect} $terraform $kubernetes $aws'
 
 # Inserts a blank line between shell prompts
 add_newline = false
@@ -33,42 +33,59 @@ vimcmd_replace_one_symbol = '[󰧘](bold purple)'
 disabled = false
 
 [directory]
-style = "blue"
-read_only = " "
+style = 'blue'
+read_only = ' '
 
 #
 # apps
 #
 
 [aws]
-format = '[$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
-symbol = " "
-style = 'yellow'
+format = '[$symbol($profile )(\($region\) )(\[$duration\])]($style)'
+symbol = ' '
+style = '#ffb84d'
+[aws.region_aliases]
+eu-west-1 = 'eu'
+us-east-1 = 'us'
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
-symbol = " "
-style = 'gray'
+symbol = ' '
+style = '#AAAAAA'
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
-conflicted = "C"
-untracked = "U"
-modified = "M"
-staged = "S"
-renamed = "R"
-deleted = "D"
-stashed = "≡"
+style = 'red'
+# deleted = 'X'
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "yellow"
+style = 'yellow'
+
+[kubernetes]
+disabled = false
+format = '[$symbol$context]($style)'
+style = '#6f98ed'
+
+[os]
+disabled = true
+[os.symbols]
+Macos = " "
 
 [python]
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-symbol = " "
+symbol = ' '
 
 [terraform]
 format = '[$symbol $workspace]($style)'
-symbol = "󰏗"
+symbol = ''
+style = '#a37ad0'
+
+#
+# custom apps
+#
+
+[custom.prefect]
+command = "cat ~/.prefect/profiles.toml | grep active | awk -F'\"' '{print $2}'"
+when = 'true'  
+symbol = ' '
+style = '#666666'
