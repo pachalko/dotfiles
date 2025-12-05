@@ -71,9 +71,15 @@ disabled = true
 [os.symbols]
 Macos = " "
 
+[package]
+format = '[$symbol$version]($style) '
+symbol = '󰏗 '
+style = 'yellow'
+
 [python]
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = ' '
+version_format = 'v${major}.${minor}'
 
 [terraform]
 format = '[$symbol $workspace]($style)'
