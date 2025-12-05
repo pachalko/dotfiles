@@ -1,7 +1,4 @@
-# Enable persistent history
-HISTFILE=~/.zsh_history
-HISTSIZE=99999
-SAVEHIST=99999
+
 
 # Home location for k9s
 export K9S_CONFIG_DIR=~/.config/k9s k9s info
