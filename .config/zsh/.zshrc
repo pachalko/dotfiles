@@ -1,4 +1,5 @@
 # Aliases. For a full list of active ones, run `alias`.
+alias cd=z
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias fzf='fzf --tmux'
 alias h=history
