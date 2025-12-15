@@ -80,6 +80,7 @@ style = 'yellow'
 format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = ' '
 version_format = 'v${major}.${minor}'
+#python_binary = [["uv", "run", "--no-python-downloads", "python"]]
 
 [terraform]
 format = '[$symbol $workspace]($style)'
