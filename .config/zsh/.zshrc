@@ -1,3 +1,6 @@
+# Bindkey e-macs style for terminal
+bindkey -e
+
 # Aliases. For a full list of active ones, run `alias`.
 alias cd=z
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
